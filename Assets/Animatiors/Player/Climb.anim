@@ -3,8 +3,9 @@
 --- !u!74 &7400000
 AnimationClip:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Climb
   serializedVersion: 6
   m_Legacy: 0
@@ -19,11 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: e4cf69eb2a38cbe4688c686bd2d23f18, type: 3}
+      value: {fileID: 21300000, guid: f27b56e84b34b954e98e104c52990a42, type: 3}
     - time: 0.1
-      value: {fileID: 21300000, guid: 32ec9fe03dd7e2c4584a092e440d2e2a, type: 3}
+      value: {fileID: 21300000, guid: f18997fdb78aa2543bc49caf51e3021c, type: 3}
     - time: 0.2
-      value: {fileID: 21300000, guid: d8f9460a43394084fa80e914de57b5f6, type: 3}
+      value: {fileID: 21300000, guid: e874197ec07947442977a75ee1f9e04d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -43,9 +44,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: e4cf69eb2a38cbe4688c686bd2d23f18, type: 3}
-    - {fileID: 21300000, guid: 32ec9fe03dd7e2c4584a092e440d2e2a, type: 3}
-    - {fileID: 21300000, guid: d8f9460a43394084fa80e914de57b5f6, type: 3}
+    - {fileID: 21300000, guid: f27b56e84b34b954e98e104c52990a42, type: 3}
+    - {fileID: 21300000, guid: f18997fdb78aa2543bc49caf51e3021c, type: 3}
+    - {fileID: 21300000, guid: e874197ec07947442977a75ee1f9e04d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -70,5 +71,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_GenerateMotionCurves: 0
   m_Events: []
