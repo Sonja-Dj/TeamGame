@@ -6,6 +6,8 @@ public class SwitchCTRL : MonoBehaviour
 {
     private bool isLowerLevelLoaded = false;
     private bool isUpperLevel1Loaded = false;
+    
+    public GameObject player;
 
     private void Awake()
     {
@@ -55,6 +57,8 @@ public class SwitchCTRL : MonoBehaviour
             
             SceneManager.UnloadSceneAsync("LowerLevel1");
             SceneManager.LoadScene("UpperLevel1", LoadSceneMode.Additive);
+
+            player.transform.Find("LightBig").GetComponent<Light2D>().intensity = 0;
         }
         else
         {
@@ -63,6 +67,8 @@ public class SwitchCTRL : MonoBehaviour
             
             SceneManager.UnloadSceneAsync("UpperLevel1");
             SceneManager.LoadScene("LowerLevel1", LoadSceneMode.Additive);
+            
+            player.transform.Find("LightBig").GetComponent<Light2D>().intensity = 1;
         }
         
         // if (activeScene.name == "LowerLevel1")
