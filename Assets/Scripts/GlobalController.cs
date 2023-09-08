@@ -13,5 +13,6 @@ public class GlobalController : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        Cursor.visible = false;
     }
 }

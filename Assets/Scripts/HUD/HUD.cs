@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class HUD : MonoBehaviour
 {
     public GameObject pauseMenu;
-    public GameObject[] pickUps;
+    //public GameObject[] pickUps;
 
     void Update()
     {
@@ -14,6 +14,7 @@ public class HUD : MonoBehaviour
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
             Time.timeScale = pauseMenu.activeSelf ? 0 : 1;
+            Cursor.visible = true;
         }
     }
 
@@ -27,10 +28,6 @@ public class HUD : MonoBehaviour
     {
         pauseMenu.SetActive(!pauseMenu.activeSelf);
         Time.timeScale = pauseMenu.activeSelf ? 0 : 1;
-    }
-
-    public void CheckByIndex(int index)
-    {
-        pickUps[index].SetActive(true);
+        Cursor.visible = false;
     }
 }
