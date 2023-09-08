@@ -16191,6 +16191,10 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 2200569048664540598, guid: c33238867af2ac24bb62422f79d7748d, type: 3}
+      propertyPath: index
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5408427302224767468, guid: c33238867af2ac24bb62422f79d7748d, type: 3}
       propertyPath: m_RootOrder
       value: 10
