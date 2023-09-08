@@ -28,6 +28,7 @@ public class DialogWindow : MonoBehaviour
                 if(windows[i].name == windowName)
                 {
                     windows[i].SetActive(true);
+                    Debug.Log(windows[i]);
                     StartCoroutine(DestroyWindow(i));
                 }
             }
