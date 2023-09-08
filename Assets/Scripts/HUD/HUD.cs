@@ -9,7 +9,7 @@ public class HUD : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
             Time.timeScale = pauseMenu.activeSelf ? 0 : 1;
@@ -19,6 +19,12 @@ public class HUD : MonoBehaviour
     public void loadMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void ResumeGame()
+    {
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        Time.timeScale = pauseMenu.activeSelf ? 0 : 1;
     }
 }
